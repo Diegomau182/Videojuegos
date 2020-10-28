@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/estilos.css">
     <title>Videojuegos</title>
 </head>
-<body>
-    
-</body>
+    <frameset rows="100 , *">
+        <frame id="superior" name="superior" src="./titulo.html">
+            <frameset cols="150,*">
+                <frame id="izquierda" name="izquierda" src="./submenu.html" />
+                <frame id="cuerpo" name="cuerpo" src="./menu.html" />
+            </frameset>
+        <noframes>
+            Su navegador no soporta esta versicon de html
+        </noframes>
+    </frameset>
 </html>
